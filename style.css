@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 799px) {
+    .nav-center {
+        background-color: beige;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 20px 0px 20px;
+    }
+
+    .nav-header .logo {
+        width: 220px;
+        margin: 10px;
+    }
+
+    .links li {
+        list-style: none;
+        padding: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .links li:hover{
+        background-color: lightblue;
+        transition: 1s;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .links a:visited {
+        color: black;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav-toggle {
+        float: right;
+        width: 50px;
+        height: 50px;
+        font-size: 2em;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    /*BY DEFAULT HIDE LINKS*/
+
+    .links{
+        height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .show-links{
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        background-color: beige;
+        padding: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .nav-header .logo{
+        width: 220px;
+        margin-top: 10px;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .links{
+        display: flex;
+        align-items: center;
+    }
+
+    .links li{
+        list-style: none;
+        margin-right: 40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .links a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .links a:visited{
+        color: black;
+    }
+
+    .links a:hover{
+        color: rgb(75, 74, 74);
+        transition: 0.5s;
+    }
+
+    .social-icons{
+        display: flex;
+        align-items: center;
+    }
+
+    .social-icons li{
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .social-icons a{
+        color: rgb(3, 3, 113);
+    }
+
+    .social-icons a i:hover{
+        color: black;
+        transition: 0.5s;
+    }
+}
+
