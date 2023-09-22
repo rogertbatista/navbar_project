@@ -66,6 +66,7 @@
 
     .show-links{
         height: 10rem;
+        transition: 1s;
     }
 }
 
