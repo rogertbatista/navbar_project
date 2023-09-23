@@ -70,6 +70,7 @@
     .nav-toggle:hover{
         animation-name: animationBtn;
         animation-duration: 1.5s;
+        animation-iteration-count: infinite;
     }
 
     /*BY DEFAULT HIDE LINKS*/
