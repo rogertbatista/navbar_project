@@ -56,6 +56,22 @@
         border: none;
         cursor: pointer;
     }
+
+    @keyframes animationBtn {
+        0%{
+            transform: rotate(0);
+        }
+
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+
+    .nav-toggle:hover{
+        animation-name: animationBtn;
+        animation-duration: 1.5s;
+    }
+
     /*BY DEFAULT HIDE LINKS*/
 
     .links{
